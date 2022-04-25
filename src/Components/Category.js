@@ -6,12 +6,21 @@ import { getStorage, ref, uploadBytes, listAll, getDownloadURL, deleteObject } f
 import { onAuthStateChanged } from "firebase/auth";
 import { auth, storage } from "../firebase-config";
 
+
+ function getUser(string) {
+      return (
+        string.substring(0, string.indexOf("@"))
+      )
+    }
+
+  
 function Category(props) {
 
     const [user, setUser] = useState({});
     const [image, setImage] = useState({});
 
     const [listUrl, setUrls] = useState([]);
+
 
     onAuthStateChanged(auth, (currentUser) => {
         setUser(currentUser);
@@ -70,7 +79,6 @@ function Category(props) {
       console.log(error);
       });
     };
-      
 
     useEffect(() => {
       getImage() 
@@ -79,7 +87,7 @@ function Category(props) {
     return (
         <>
         <div class="text-3xl text-center">
-        {props.name}
+        {getUser(user.email)}      {props.name}
         </div>
         
         <div class="text-center">
