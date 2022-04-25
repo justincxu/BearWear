@@ -79,7 +79,7 @@ function Category(props) {
     return (
         <>
         <div class="text-3xl text-center">
-        {user.email.substring(0, user.email.indexOf("@"))}     {props.name}
+        {props.name}
         </div>
         
         <div class="text-center">
