@@ -87,7 +87,7 @@ function Category(props) {
     return (
         <>
         <div class="text-3xl text-center">
-        {getUser(user?.email)}      {props.name}
+        {getUser(auth.currentUser.email)}      {props.name}
         </div>
         
         <div class="text-center">
