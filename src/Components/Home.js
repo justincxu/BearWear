@@ -43,7 +43,8 @@ function Home () {
     <div class="text-center font-bold">
         <div className="text-3xl m-4 inline-flex">
           <span class="text-sky-600/100 font-bold">
-            {getUser(auth.currentUser.email)}
+
+            {getUser(auth.currentUser?.email)}
           </span>
           <span>
               's Digital Closet
