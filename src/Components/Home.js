@@ -5,9 +5,11 @@ import { useState } from 'react';
 import { onAuthStateChanged } from "firebase/auth";
 
 function getUser(string) {
-  return (
-    string.substring(0, string.indexOf("@"))
-  )
+  if (string != null) {
+    return (
+      string.substring(0, string.indexOf("@"))
+    )
+  }
 }
 
 function Home () {

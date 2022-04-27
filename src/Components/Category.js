@@ -8,9 +8,11 @@ import { auth, storage } from "../firebase-config";
 
 
  function getUser(string) {
+   if (string != null) {
       return (
         string.substring(0, string.indexOf("@"))
       )
+      }
     }
 
   
@@ -89,7 +91,7 @@ function Category(props) {
         <div className="text-center m-6">
           <div className="inline-flex text-3xl">
             <span class="text-sky-600/100 font-bold" >
-            {getUser(auth.currentUser.email)}      
+            {getUser(auth.currentUser?.email)}      
             </span>
             <span>
               's {props.name}
