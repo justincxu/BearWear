@@ -112,7 +112,7 @@ function Category(props) {
             listUrl.map(url => (
               (
                 <div className="group relative">
-                   <button onClick={() => deleteFromFirebase(url)} className="font-bold z-10 absolute right-12 text-red-500 
+                   <button onClick={() => deleteFromFirebase(url)} className="font-bold z-10 absolute right-14 text-red-500 
                   text-4xl font-base hidden group-hover:block">x</button>
                   <img className="w-60 h-60 group relative object-cover" src={url} />
               
