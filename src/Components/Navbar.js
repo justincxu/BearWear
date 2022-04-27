@@ -6,7 +6,6 @@ import { createUserWithEmailAndPassword,
      onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../firebase-config";  
 
-
 function Navbar () {
     let navigate = useNavigate();
     const logOut = async () => {
@@ -15,11 +14,10 @@ function Navbar () {
     }
     return (
         <>
-            <div>
-                <Link className="text-2xl active" to={"/"}>BearWear</Link>
+            <div className="flex flex-col m-4">
+                <Link className="text-3xl active font-bold" to={"/"}>BearWear</Link>
                 <div className="text-right">
-                    <a>User</a>
-                    <div>
+                    <div className="">
                         <button onClick={logOut}>Log Out</button>
                     </div>
                 </div>

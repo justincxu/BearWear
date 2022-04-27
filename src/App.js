@@ -38,12 +38,12 @@ function App() {
           {user && (
             <>
             <Route path='/' element={< Home />}></Route>
-            <Route path='/Outer' element={< Category name="Outer" />}></Route>
-            <Route path='/Bottom' element={< Category name="Button"/>}></Route>
-            <Route path='/Tops' element={< Category name="Tops"/>}></Route>
-            <Route path='/Shoes' element={< Category name="Shoes"/>}></Route>
+            <Route path='/Shirts' element={< Category name="Shirts" />}></Route>
+            <Route path='/Pants' element={< Category name="Pants"/>}></Route>
+            <Route path='/Jackets' element={< Category name="Jackets"/>}></Route>
+            <Route path='/Shorts' element={< Category name="Shorts"/>}></Route>
             <Route path='/Accessories' element={< Category name="Accessories"/>}></Route>
-            <Route path='/Underwear' element={< Category name="Underwear"/>}></Route>
+            <Route path='/Shoes' element={< Category name="Shoes"/>}></Route>
             </>
             )}
       </Routes>

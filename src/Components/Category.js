@@ -5,6 +5,7 @@ import { getStorage, ref, uploadBytes, listAll, getDownloadURL, deleteObject } f
 // import App from "./upload";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth, storage } from "../firebase-config";
+import { setUserId } from "firebase/analytics";
 
 
  function getUser(string) {
@@ -117,6 +118,5 @@ function Category(props) {
     )  
     
 }
-       
     
 export default Category;
