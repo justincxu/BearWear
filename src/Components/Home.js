@@ -29,7 +29,7 @@ function Home () {
 
           }}>
              <div class="flex flex-col items-center space-y-16 text-xl text-white m-4">
-                <Link to={"/Shirts"}>Shirts</Link>
+                <Link class="mt-6" to={"/Shirts"}>Shirts</Link>
                 <Link to={"/Pants"}>Pants</Link>
                 <Link to={"/Jackets"}>Jackets</Link>
                 <Link to={"/Shorts"}>Shorts</Link>
