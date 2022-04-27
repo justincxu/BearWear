@@ -15,12 +15,6 @@ function Navbar () {
     }
     return (
         <>
-          {/* <div style={{ 
-            backgroundImage: `url("https://t4.ftcdn.net/jpg/03/01/16/41/240_F_301164174_cwkA3lQmphf1wwemWEA6TYpmxtC4Fdnh.jpg")`,  
-            marginTop: "8px" ,backgroundSize:'cover', backgroundPosition: 'center', height: '120px'
-
-          }}> */}
-          
                 <div className="m-4">
                 <div className="flex flex-col">
                     <Link className="text-3xl active font-bold" to={"/"}>BearWear</Link>
@@ -31,7 +25,6 @@ function Navbar () {
                     </div>
                 </div>
                 </div>
-            {/* </div> */}
         </>    
     );
 };
