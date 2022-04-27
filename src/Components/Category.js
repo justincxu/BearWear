@@ -5,7 +5,6 @@ import { getStorage, ref, uploadBytes, listAll, getDownloadURL, deleteObject } f
 // import App from "./upload";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth, storage } from "../firebase-config";
-import { setUserId } from "firebase/analytics";
 
 
  function getUser(string) {
@@ -87,10 +86,16 @@ function Category(props) {
     
     return (
         <>
-        <div class="text-3xl text-center">
-        {getUser(auth.currentUser.email)}      {props.name}
+        <div className="text-center m-6">
+          <div className="inline-flex text-3xl">
+            <span class="text-sky-600/100 font-bold" >
+            {getUser(auth.currentUser.email)}      
+            </span>
+            <span>
+              's {props.name}
+            </span>
+          </div>
         </div>
-        
         <div class="text-center">
           <input type="file" onChange = {handleChange} >
           </input>
