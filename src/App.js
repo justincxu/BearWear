@@ -5,7 +5,6 @@ import Navbar from './Components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Category from './Components/Category';
-import Authentication from './Components/Authorization';
 import SignIn from './Components/SignIn';
 import SignUp from './Components/SignUp';
 import { useState } from 'react';

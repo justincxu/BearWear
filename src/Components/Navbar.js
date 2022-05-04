@@ -17,7 +17,7 @@ function Navbar () {
         <>
                 <div className="m-4">
                 <div className="flex flex-col">
-                    <Link className="text-3xl active font-bold" to={"/"}>BearWear</Link>
+                    <Link className="text-3xl active font-bold" to={"/"}>DigitalCloset</Link>
                     <div className="text-right">
                         <div className="">
                             <button onClick={logOut}>Log Out</button>
